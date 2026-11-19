@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aura | L'entretien intelligent de vos plantes</title>
+<meta name="description" content="Aura, le pot connecté qui surveille, analyse et prend soin de vos plantes d'intérieur : hydratation autonome, analyse lumineuse, équilibre nutritif.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2307130b'/%3E%3Cpath d='M16 6c6 4 8 10 0 20C8 16 10 10 16 6z' fill='%2334d399'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<a href="#main" class="skip">Aller au contenu</a>
+
+<!-- NAV -->
+<header class="nav" id="navbar">
+  <div class="nav__inner glass">
+    <a href="#top" class="brand" aria-label="Aura, accueil">
+      <i class="ph-fill ph-leaf"></i><span>AURA</span>
+    </a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#produit">Produit</a>
+      <a href="#fonctionnement">Fonctionnement</a>
+      <a href="#simulateur">Simulateur</a>
+      <a href="#application">Application</a>
+      <a href="#plantes">Plantes</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#precommande" class="btn btn--glass btn--sm nav__cta">Pré-commander <i class="ph ph-arrow-right"></i></a>
+    <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><i class="ph ph-list"></i></button>
+  </div>
+  <div class="mobile-menu glass" id="mobileMenu" hidden>
+    <a href="#produit">Produit</a>
+    <a href="#fonctionnement">Fonctionnement</a>
+    <a href="#simulateur">Simulateur</a>
+    <a href="#application">Application</a>
+    <a href="#plantes">Plantes</a>
+    <a href="#faq">FAQ</a>
+    <a href="#precommande" class="btn btn--primary">Pré-commander</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__media">
+    <img src="./assets/hero.webp" alt="Le pot connecté Aura blanc craie avec une monstera, anneau lumineux émeraude allumé, sur un socle de pierre dans la pénombre" width="1600" height="900" fetchpriority="high">
+    <div class="hero__scrim"></div>
+  </div>
+  <div class="orb orb-1"></div>
+  <div class="container hero__content">
+    <div class="pill glass reveal">
+      <span class="ping"><span></span><span></span></span>
+      Version Beta 2.0 disponible
+    </div>
+    <h1 class="hero__title reveal">Respirez avec la <br><span class="grad">nature connectée.</span></h1>
+    <p class="hero__lead reveal">Aura surveille, analyse et prend soin de vos plantes d'intérieur. Un écosystème intelligent qui allie design minimaliste et technologie botanique avancée.</p>
+    <div class="hero__ctas reveal">
+      <a href="#precommande" class="btn btn--primary">Réserver mon Aura · 19 €</a>
+      <a href="#simulateur" class="btn btn--ghost glass"><i class="ph ph-play-circle"></i> Essayer le simulateur</a>
+    </div>
+    <ul class="hero__trust reveal">
+      <li><i class="ph ph-check-circle"></i> Livraison printemps 2027</li>
+      <li><i class="ph ph-check-circle"></i> Acompte remboursable</li>
+      <li><i class="ph ph-check-circle"></i> 1 200+ espèces reconnues</li>
+    </ul>
+  </div>
+
+  <div class="hero__chips" aria-hidden="true">
+    <div class="chip glass chip--a"><i class="ph-fill ph-drop"></i><div><b id="heroWater">64%</b><small>Humidité du sol</small></div></div>
+    <div class="chip glass chip--b"><i class="ph-fill ph-sun"></i><div><b>12 400 lx</b><small>Lumière reçue</small></div></div>
+    <div class="chip glass chip--c"><i class="ph-fill ph-heartbeat"></i><div><b>Excellente</b><small>Santé · Monstera</small></div></div>
+  </div>
+  <a href="#produit" class="scroll-cue" aria-label="Défiler vers la suite"><span></span></a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Hydratation autonome</span><i class="ph-fill ph-leaf"></i>
+    <span>Analyse lumineuse</span><i class="ph-fill ph-leaf"></i>
+    <span>Équilibre nutritif</span><i class="ph-fill ph-leaf"></i>
+    <span>Mode vacances 30 jours</span><i class="ph-fill ph-leaf"></i>
+    <span>Zéro plante oubliée</span><i class="ph-fill ph-leaf"></i>
+    <span>Hydratation autonome</span><i class="ph-fill ph-leaf"></i>
+    <span>Analyse lumineuse</span><i class="ph-fill ph-leaf"></i>
+    <span>Équilibre nutritif</span><i class="ph-fill ph-leaf"></i>
+    <span>Mode vacances 30 jours</span><i class="ph-fill ph-leaf"></i>
+    <span>Zéro plante oubliée</span><i class="ph-fill ph-leaf"></i>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="section" id="produit">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">01 — Intelligence</span>
+      <h2>Une intelligence <span class="accent">organique</span></h2>
+      <p>Des capteurs haute précision intégrés dans un design épuré pour comprendre les besoins uniques de chaque plante.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><b data-count="4">0</b><span>capteurs embarqués</span></div>
+      <div class="stat"><b data-count="30" data-suffix=" j">0</b><span>d'autonomie en eau</span></div>
+      <div class="stat"><b data-count="1200" data-suffix="+">0</b><span>espèces reconnues</span></div>
+      <div class="stat"><b data-count="6" data-suffix=" mois">0</b><span>de batterie</span></div>
+    </div>
+
+    <div class="features">
+      <article class="card glass reveal">
+        <div class="card__icon ic-emerald"><i class="ph ph-drop"></i></div>
+        <h3>Hydratation autonome</h3>
+        <p>Le réservoir intelligent distribue la quantité exacte d'eau selon le taux d'humidité du sol et l'espèce de la plante.</p>
+        <span class="tag">Micro-pompe · ±2 ml</span>
+      </article>
+      <article class="card glass reveal">
+        <div class="card__icon ic-yellow"><i class="ph ph-sun"></i></div>
+        <h3>Analyse lumineuse</h3>
+        <p>Les capteurs mesurent l'exposition tout au long de la journée pour vous conseiller le meilleur emplacement.</p>
+        <span class="tag">Lux + UV · toutes les 10 min</span>
+      </article>
+      <article class="card glass reveal">
+        <div class="card__icon ic-purple"><i class="ph ph-flask"></i></div>
+        <h3>Équilibre nutritif</h3>
+        <p>Suivi de la conductivité du terreau pour vous alerter précisément quand ajouter de l'engrais.</p>
+        <span class="tag">Conductivité (EC)</span>
+      </article>
+      <article class="card glass reveal">
+        <div class="card__icon ic-sky"><i class="ph ph-thermometer-simple"></i></div>
+        <h3>Climat ambiant</h3>
+        <p>Température et humidité de l'air sont suivies en continu : Aura vous prévient d'un radiateur trop proche ou d'un courant d'air.</p>
+        <span class="tag">±0,3 °C · ±2 % HR</span>
+      </article>
+      <article class="card glass reveal">
+        <div class="card__icon ic-emerald"><i class="ph ph-bell-ringing"></i></div>
+        <h3>Alertes utiles, jamais envahissantes</h3>
+        <p>Une notification seulement quand une action de votre part est vraiment nécessaire. L'anneau lumineux résume l'état d'un coup d'œil.</p>
+        <span class="tag">App + anneau LED</span>
+      </article>
+      <article class="card glass reveal">
+        <div class="card__icon ic-sky"><i class="ph ph-airplane-tilt"></i></div>
+        <h3>Mode vacances</h3>
+        <p>Partez l'esprit léger : Aura rationne le réservoir pour tenir jusqu'à 30 jours et vous envoie un bilan quotidien.</p>
+        <span class="tag">Jusqu'à 30 jours</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WORLD / EDITORIAL -->
+<section class="world">
+  <div class="container world__grid">
+    <figure class="world__img reveal">
+      <img src="./assets/salon.webp" alt="Le pot Aura avec sa monstera sur un buffet en chêne près d'une fenêtre parisienne, au coucher du soleil" width="1600" height="900" loading="lazy">
+    </figure>
+    <div class="world__text reveal">
+      <span class="eyebrow">02 — Design</span>
+      <h2>Pensé pour disparaître <span class="accent">dans votre intérieur.</span></h2>
+      <p>Pas d'écran, pas de câble apparent. Une céramique mate, trois teintes douces, et un fin anneau lumineux qui ne s'allume que pour dire l'essentiel. La technologie reste invisible ; seule votre plante attire le regard.</p>
+      <ul class="legend">
+        <li><span class="dot dot--ok"></span><b>Vert</b> tout va bien</li>
+        <li><span class="dot dot--warn"></span><b>Ambre</b> conseil disponible</li>
+        <li><span class="dot dot--bad"></span><b>Pulsation rouge</b> action requise</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS: pinned scrub -->
+<section class="how" id="fonctionnement">
+  <div class="how__track" id="howTrack">
+    <div class="how__sticky">
+      <div class="container how__grid">
+        <div class="how__visual">
+          <img src="./assets/capteur.webp" alt="Sonde Aura plantée dans le terreau humide, voyant émeraude allumé" width="1600" height="1200" loading="lazy" id="howImg">
+          <div class="how__overlay">
+            <div class="scan" data-step="0"><span></span><span></span><span></span></div>
+            <div class="readout glass" data-step="1">
+              <div class="readout__row"><span>Humidité sol</span><b>38 %</b></div>
+              <div class="readout__row"><span>Cible Monstera</span><b>50–80 %</b></div>
+              <div class="readout__row"><span>Écart</span><b class="t-warn">−12 %</b></div>
+            </div>
+            <div class="drops" data-step="2"><i></i><i></i><i></i><i></i></div>
+            <svg class="learn" data-step="3" viewBox="0 0 300 120" aria-hidden="true">
+              <path d="M0 90 C40 85 60 40 100 50 S160 95 200 60 S260 30 300 35" fill="none" stroke="#34d399" stroke-width="3"/>
+              <path d="M0 70 L300 70" stroke="rgba(255,255,255,.25)" stroke-dasharray="4 6"/>
+            </svg>
+          </div>
+          <div class="how__progress"><span id="howBar"></span></div>
+        </div>
+        <div class="how__steps">
+          <span class="eyebrow">03 — Fonctionnement</span>
+          <h2>Quatre gestes, <span class="accent">aucun effort.</span></h2>
+          <ol class="steps" id="steps">
+            <li class="step is-active"><span class="step__n">01</span><div><h3>Mesurer</h3><p>La sonde capte humidité, conductivité et température du sol toutes les 10 minutes, pendant que le capteur du rebord suit la lumière.</p></div></li>
+            <li class="step"><span class="step__n">02</span><div><h3>Analyser</h3><p>Les mesures sont comparées au profil de votre espèce : Aura sait qu'une fougère aime l'humidité quand un cactus préfère la sécheresse.</p></div></li>
+            <li class="step"><span class="step__n">03</span><div><h3>Agir</h3><p>La micro-pompe délivre l'eau goutte à goutte depuis le réservoir. Pour la lumière et l'engrais, Aura vous dit quoi faire, et quand.</p></div></li>
+            <li class="step"><span class="step__n">04</span><div><h3>Apprendre</h3><p>Semaine après semaine, l'algorithme affine ses seuils selon la saison et votre intérieur. Votre plante a un profil unique.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANATOMY / HOTSPOTS -->
+<section class="section anatomy">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">04 — Anatomie</span>
+      <h2>Ce qui se cache <span class="accent">sous la céramique.</span></h2>
+      <p>Touchez un point pour explorer chaque composant.</p>
+    </div>
+    <div class="anatomy__grid">
+      <div class="anatomy__stage reveal">
+        <div class="anatomy__halo"></div>
+        <img src="./assets/pot-craie.webp" alt="Pot Aura blanc craie avec monstera, vue de trois quarts" width="1000" height="1104" loading="lazy">
+        <button class="hotspot" style="--x:42%;--y:56.5%" data-part="0" aria-label="Sonde de sol"><span>1</span></button>
+        <button class="hotspot" style="--x:66%;--y:60%" data-part="1" aria-label="Anneau lumineux"><span>2</span></button>
+        <button class="hotspot" style="--x:52%;--y:78%" data-part="2" aria-label="Fenêtre de niveau d'eau"><span>3</span></button>
+        <button class="hotspot" style="--x:38%;--y:84%" data-part="3" aria-label="Réservoir et micro-pompe"><span>4</span></button>
+        <button class="hotspot" style="--x:58%;--y:93%" data-part="4" aria-label="Batterie et USB-C"><span>5</span></button>
+      </div>
+      <div class="anatomy__panel">
+        <ul class="parts" id="parts"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIMULATOR -->
+<section class="section sim" id="simulateur">
+  <div class="sim__bg"></div>
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">05 — Simulateur</span>
+      <h2>Simulateur <span class="accent">Aura</span></h2>
+      <p>Choisissez une plante, laissez filer le temps, et comparez vos soins à ceux d'Aura. Attention : trop d'eau est aussi dangereux que pas assez.</p>
+    </div>
+
+    <div class="sim__panel glass">
+      <div class="sim__toolbar">
+        <div class="seg" role="radiogroup" aria-label="Espèce" id="speciesSeg"></div>
+        <div class="sim__toggles">
+          <label class="switch"><input type="checkbox" id="autoMode"><span class="switch__ui"></span><span>Mode Aura auto</span></label>
+          <div class="seg seg--sm" role="radiogroup" aria-label="Vitesse" id="speedSeg">
+            <button role="radio" aria-checked="true" data-speed="1">×1</button>
+            <button role="radio" aria-checked="false" data-speed="4">×4</button>
+          </div>
+          <button class="icon-btn" id="pauseBtn" aria-label="Pause"><i class="ph ph-pause"></i></button>
+          <button class="icon-btn" id="resetBtn" aria-label="Recommencer"><i class="ph ph-arrow-counter-clockwise"></i></button>
+        </div>
+      </div>
+
+      <div class="sim__body">
+        <div class="sim__left">
+          <div class="sim__health">
+            <div>
+              <h3><i class="ph-fill ph-heartbeat"></i> Santé globale</h3>
+              <div class="big" id="health-value">100%</div>
+            </div>
+            <div class="clock glass" id="clock"><i class="ph ph-sun" id="clockIcon"></i><span id="clockText">Jour 1 · 08:00</span></div>
+          </div>
+          <div class="track track--lg"><div class="fill fill--health" id="health-bar"></div></div>
+          <p id="plant-status-text" class="status status--ok">Votre plante est en pleine forme.</p>
+
+          <div class="meters">
+            <div class="meter" data-k="water">
+              <div class="meter__top"><span><i class="ph ph-drop"></i> Hydratation</span><span class="meter__val" id="water-text">70%</span></div>
+              <div class="track"><div class="band" id="water-band"></div><div class="fill fill--water" id="water-bar"></div></div>
+            </div>
+            <div class="meter" data-k="sun">
+              <div class="meter__top"><span><i class="ph ph-sun"></i> Luminosité</span><span class="meter__val" id="sun-text">60%</span></div>
+              <div class="track"><div class="band" id="sun-band"></div><div class="fill fill--sun" id="sun-bar"></div></div>
+            </div>
+            <div class="meter" data-k="nutrients">
+              <div class="meter__top"><span><i class="ph ph-flask"></i> Nutriments</span><span class="meter__val" id="nutrients-text">60%</span></div>
+              <div class="track"><div class="band" id="nutrients-band"></div><div class="fill fill--nutrients" id="nutrients-bar"></div></div>
+            </div>
+            <p class="hint"><span class="band-swatch"></span> Zone idéale pour l'espèce choisie</p>
+          </div>
+
+          <div class="actions">
+            <button class="action act-water" data-act="water"><i class="ph-fill ph-drop"></i><span>Arroser</span></button>
+            <button class="action act-sun" data-act="sun"><i class="ph-fill ph-sun"></i><span>Soleil</span></button>
+            <button class="action act-nut" data-act="nutrients"><i class="ph-fill ph-sparkle"></i><span>Engrais</span></button>
+          </div>
+        </div>
+
+        <div class="sim__right">
+          <div class="sky" id="sky"><span class="sky__sun" id="skySun"></span></div>
+          <div class="plant-stage">
+            <div class="plant-base"></div>
+            <svg viewBox="0 0 200 300" class="plant plant-happy" id="animated-plant" aria-label="Illustration de la plante simulée">
+              <path d="M 60 250 L 140 250 L 160 180 L 40 180 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+              <path d="M 35 180 L 165 180 L 165 165 L 35 165 Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+              <line x1="37" y1="181" x2="163" y2="181" stroke="#34d399" stroke-width="3" id="ledRing" class="led"/>
+              <ellipse cx="100" cy="165" rx="65" ry="10" fill="#2d3748" id="soil"/>
+              <path d="M 100 165 Q 105 100 95 40" fill="none" stroke="#10b981" stroke-width="6" stroke-linecap="round" class="plant-stem"/>
+              <g class="plant-leaf plant-leaf-left" style="transform-origin:98px 120px"><path d="M 98 120 Q 50 100 40 140 Q 60 150 98 120 Z" fill="#34d399"/></g>
+              <g class="plant-leaf plant-leaf-right" style="transform-origin:102px 90px"><path d="M 102 90 Q 150 70 160 110 Q 140 120 102 90 Z" fill="#34d399"/></g>
+              <g class="plant-leaf plant-leaf-left" style="transform-origin:96px 60px"><path d="M 96 60 Q 60 30 50 70 Q 70 80 96 60 Z" fill="#10b981"/></g>
+              <g class="plant-leaf plant-leaf-right" style="transform-origin:97px 45px"><path d="M 97 45 Q 125 15 140 35 Q 125 55 97 45 Z" fill="#10b981"/></g>
+            </svg>
+            <div class="fx" id="fx"></div>
+          </div>
+          <div class="log glass">
+            <div class="log__head"><span>Journal Aura</span><span class="score">Soins manuels : <b id="manualCount">0</b> · Aura : <b id="autoCount">0</b></span></div>
+            <ul id="log"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APP -->
+<section class="section app" id="application">
+  <div class="container app__grid">
+    <div class="app__text reveal">
+      <span class="eyebrow">06 — L'application</span>
+      <h2>Toutes vos plantes, <span class="accent">un seul regard.</span></h2>
+      <p>L'application Aura (iOS et Android) regroupe l'historique de chaque plante, des conseils personnalisés et des alertes claires. Explorez l'interface ci-contre.</p>
+      <ul class="checks">
+        <li><i class="ph ph-check"></i> Historique sur 7, 30 et 365 jours</li>
+        <li><i class="ph ph-check"></i> Reconnaissance de l'espèce par photo</li>
+        <li><i class="ph ph-check"></i> Partage de la garde avec un proche</li>
+        <li><i class="ph ph-check"></i> Fonctionne hors ligne, données chiffrées</li>
+      </ul>
+    </div>
+    <div class="phone reveal" aria-label="Maquette interactive de l'application">
+      <div class="phone__frame">
+        <div class="phone__notch"></div>
+        <div class="phone__screen">
+          <div class="phone__status"><span>9:41</span><span><i class="ph-fill ph-cell-signal-full"></i> <i class="ph-fill ph-battery-high"></i></span></div>
+          <div class="ptabs" role="tablist">
+            <button role="tab" aria-selected="true" data-tab="home">Aujourd'hui</button>
+            <button role="tab" aria-selected="false" data-tab="hist">Historique</button>
+            <button role="tab" aria-selected="false" data-tab="alerts">Alertes <em>2</em></button>
+          </div>
+          <div class="ppanel" data-panel="home">
+            <p class="phi">Bonjour,<br><b>3 plantes sur 4 vont très bien.</b></p>
+            <div id="plantList"></div>
+          </div>
+          <div class="ppanel" data-panel="hist" hidden>
+            <div class="pseg" id="metricSeg">
+              <button aria-pressed="true" data-m="water">Eau</button>
+              <button aria-pressed="false" data-m="sun">Lumière</button>
+              <button aria-pressed="false" data-m="temp">Temp.</button>
+            </div>
+            <div class="chart"><svg id="chart" viewBox="0 0 280 160" aria-label="Graphique sur 7 jours"></svg></div>
+            <p class="chart__note" id="chartNote"></p>
+          </div>
+          <div class="ppanel" data-panel="alerts" hidden>
+            <div class="alert alert--warn"><i class="ph-fill ph-sun"></i><div><b>Calathea · Chambre</b><p>Lumière trop directe depuis 2 jours. Reculez-la d'un mètre de la fenêtre.</p><small>Il y a 1 h</small></div></div>
+            <div class="alert alert--info"><i class="ph-fill ph-flask"></i><div><b>Monstera · Salon</b><p>Engrais conseillé cette semaine (croissance printanière).</p><small>Hier</small></div></div>
+            <div class="alert alert--ok"><i class="ph-fill ph-drop"></i><div><b>Pilea · Cuisine</b><p>Arrosage automatique effectué : 45 ml.</p><small>Hier, 07:12</small></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANT LIBRARY -->
+<section class="section library" id="plantes">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">07 — Bibliothèque</span>
+      <h2>Le guide des <span class="accent">plantes d'intérieur</span></h2>
+      <p>Un aperçu des profils intégrés à Aura. Filtrez selon votre intérieur et découvrez les réglages recommandés.</p>
+    </div>
+    <div class="filters glass">
+      <label class="search"><i class="ph ph-magnifying-glass"></i><input type="search" id="q" placeholder="Rechercher une plante…" aria-label="Rechercher une plante"></label>
+      <div class="chips" id="fDiff" aria-label="Difficulté">
+        <button class="fchip" aria-pressed="true" data-v="all">Toutes</button>
+        <button class="fchip" aria-pressed="false" data-v="Facile">Facile</button>
+        <button class="fchip" aria-pressed="false" data-v="Modérée">Modérée</button>
+        <button class="fchip" aria-pressed="false" data-v="Exigeante">Exigeante</button>
+      </div>
+      <div class="chips" id="fLight" aria-label="Lumière">
+        <button class="fchip" aria-pressed="true" data-v="all">Toute lumière</button>
+        <button class="fchip" aria-pressed="false" data-v="Faible">Faible</button>
+        <button class="fchip" aria-pressed="false" data-v="Indirecte">Indirecte</button>
+        <button class="fchip" aria-pressed="false" data-v="Directe">Directe</button>
+      </div>
+      <label class="switch switch--sm"><input type="checkbox" id="fPet"><span class="switch__ui"></span><span>Sans danger pour les animaux</span></label>
+    </div>
+    <p class="count" id="count"></p>
+    <div class="plants" id="plantsGrid"></div>
+  </div>
+</section>
+
+<!-- VACATION (dark punctuation) -->
+<section class="vacation">
+  <img src="./assets/vacances.webp" alt="Salon plongé dans la nuit, seul l'anneau émeraude du pot Aura éclaire la monstera près de la fenêtre" width="1600" height="900" loading="lazy" class="vacation__img">
+  <div class="vacation__scrim"></div>
+  <div class="container vacation__content reveal">
+    <span class="eyebrow">08 — Mode vacances</span>
+    <h2>Vous partez. <span class="accent">Aura veille.</span></h2>
+    <p>Indiquez la durée de votre absence : Aura calcule la réserve d'eau nécessaire.</p>
+    <div class="vac glass">
+      <label for="vacDays">Durée d'absence : <b id="vacDaysOut">14 jours</b></label>
+      <input type="range" id="vacDays" min="3" max="45" value="14">
+      <div class="vac__res">
+        <div><small>Plante</small>
+          <select id="vacPlant" aria-label="Plante">
+            <option value="4">Monstera</option><option value="1.2">Sansevieria</option><option value="7">Fougère</option><option value="3">Orchidée</option>
+          </select></div>
+        <div><small>Taille du pot</small>
+          <select id="vacSize" aria-label="Taille du pot">
+            <option value="0.6">Mini · 0,6 L</option><option value="1.2" selected>Original · 1,2 L</option><option value="2.5">Grand · 2,5 L</option>
+          </select></div>
+        <div class="vac__verdict" id="vacVerdict"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="section">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">09 — Comparatif</span>
+      <h2>Pourquoi <span class="accent">Aura</span> ?</h2>
+    </div>
+    <div class="table-wrap glass reveal">
+      <table class="compare">
+        <thead><tr><th scope="col"></th><th scope="col">Arrosage manuel</th><th scope="col">Pot à réserve classique</th><th scope="col" class="hl">Aura</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Dose adaptée à l'espèce</th><td><i class="ph ph-minus"></i></td><td><i class="ph ph-x"></i></td><td class="hl"><i class="ph-bold ph-check"></i></td></tr>
+          <tr><th scope="row">Mesure de la lumière</th><td><i class="ph ph-x"></i></td><td><i class="ph ph-x"></i></td><td class="hl"><i class="ph-bold ph-check"></i></td></tr>
+          <tr><th scope="row">Alerte engrais</th><td><i class="ph ph-x"></i></td><td><i class="ph ph-x"></i></td><td class="hl"><i class="ph-bold ph-check"></i></td></tr>
+          <tr><th scope="row">Autonomie en absence</th><td>2 à 4 jours</td><td>~10 jours</td><td class="hl">jusqu'à 30 jours</td></tr>
+          <tr><th scope="row">Risque d'excès d'eau</th><td>Élevé</td><td>Moyen</td><td class="hl">Très faible</td></tr>
+          <tr><th scope="row">Suivi historique</th><td><i class="ph ph-x"></i></td><td><i class="ph ph-x"></i></td><td class="hl"><i class="ph-bold ph-check"></i></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- PREORDER -->
+<section class="section order" id="precommande">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">10 — Pré-commande</span>
+      <h2>Choisissez <span class="accent">votre Aura.</span></h2>
+      <p>Trois tailles, trois teintes. Réservez aujourd'hui avec 19 € d'acompte, remboursable à tout moment avant l'expédition.</p>
+    </div>
+    <figure class="order__family reveal">
+      <img src="./assets/gamme.webp" alt="Les trois pots Aura (Mini blanc craie, Original sauge, Grand charbon) alignés sur une étagère en béton" width="1600" height="900" loading="lazy">
+    </figure>
+
+    <div class="config glass">
+      <div class="config__visual">
+        <img id="cfgImg" src="./assets/pot-craie.webp" alt="Aura teinte Craie" width="1000" height="1104" loading="lazy">
+      </div>
+      <form class="config__form" id="orderForm" novalidate>
+        <fieldset>
+          <legend>Taille</legend>
+          <div class="sizes" id="sizes"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Teinte : <b id="colorName">Craie</b></legend>
+          <div class="swatches" id="swatches">
+            <button type="button" class="sw" style="--c:#e9e7e2" data-c="craie" data-n="Craie" aria-pressed="true" aria-label="Craie"></button>
+            <button type="button" class="sw" style="--c:#a9b9a0" data-c="sauge" data-n="Sauge" aria-pressed="false" aria-label="Sauge"></button>
+            <button type="button" class="sw" style="--c:#3a3b3d" data-c="charbon" data-n="Charbon" aria-pressed="false" aria-label="Charbon"></button>
+          </div>
+        </fieldset>
+        <div class="row2">
+          <fieldset>
+            <legend>Quantité</legend>
+            <div class="qty"><button type="button" id="qMinus" aria-label="Diminuer">−</button><output id="qty">1</output><button type="button" id="qPlus" aria-label="Augmenter">+</button></div>
+          </fieldset>
+          <label class="switch switch--sm sub"><input type="checkbox" id="caps"><span class="switch__ui"></span><span>Capsules nutritives<br><small>4,90 €/mois, sans engagement</small></span></label>
+        </div>
+        <div class="summary">
+          <div><span>Total à la livraison</span><b id="total">129 €</b></div>
+          <div><span>Acompte aujourd'hui</span><b class="accent" id="deposit">19 €</b></div>
+          <small id="discountNote"></small>
+        </div>
+        <div class="fields">
+          <label><span>Prénom</span><input type="text" id="fname" autocomplete="given-name" required></label>
+          <label><span>E-mail</span><input type="email" id="email" autocomplete="email" required></label>
+        </div>
+        <p class="err" id="formErr" role="alert"></p>
+        <button class="btn btn--primary btn--block" type="submit">Réserver mon Aura <i class="ph ph-arrow-right"></i></button>
+        <p class="fine"><i class="ph ph-lock-simple"></i> Acompte remboursable · Livraison estimée au printemps 2027</p>
+      </form>
+      <div class="success" id="success" hidden>
+        <i class="ph-fill ph-check-circle"></i>
+        <h3>Merci <span id="sName"></span>, votre Aura est réservé.</h3>
+        <p id="sDetail"></p>
+        <p class="ref">Référence : <b id="sRef"></b></p>
+        <button class="btn btn--glass" id="again">Faire une autre réservation</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container faq">
+    <div class="section__head section__head--left reveal">
+      <span class="eyebrow">11 — Questions</span>
+      <h2>Questions <span class="accent">fréquentes</span></h2>
+      <p>Une autre question ? Écrivez-nous à <a href="mailto:bonjour@aura-plantes.fr" class="link">bonjour@aura-plantes.fr</a>.</p>
+    </div>
+    <div class="faq__list" id="faqList">
+      <details><summary>Faut-il une connexion Wi-Fi permanente ?<i class="ph ph-plus"></i></summary><div><p>Non. Aura arrose de façon autonome même sans réseau. Le Wi-Fi (2,4 GHz) ou le Bluetooth servent uniquement à synchroniser l'application et à recevoir les alertes.</p></div></details>
+      <details><summary>Comment Aura connaît-il ma plante ?<i class="ph ph-plus"></i></summary><div><p>Prenez une photo dans l'application : l'espèce est reconnue parmi plus de 1 200 profils. Vous pouvez aussi la choisir manuellement et ajuster les seuils.</p></div></details>
+      <details><summary>Combien de temps tient la batterie ?<i class="ph ph-plus"></i></summary><div><p>Environ 6 mois en usage normal. La recharge se fait en USB-C en deux heures, sans sortir la plante du pot.</p></div></details>
+      <details><summary>Puis-je utiliser mon propre terreau ?<i class="ph ph-plus"></i></summary><div><p>Oui, tout terreau convient. Pour les cactées et succulentes, Aura recommande simplement un mélange drainant et adapte ses mesures en conséquence.</p></div></details>
+      <details><summary>L'acompte est-il vraiment remboursable ?<i class="ph ph-plus"></i></summary><div><p>Oui, intégralement et à tout moment avant l'expédition, depuis votre espace client ou par simple e-mail.</p></div></details>
+      <details><summary>Le pot est-il étanche pour l'intérieur ?<i class="ph ph-plus"></i></summary><div><p>Le réservoir est séparé du terreau et la base est entièrement étanche : aucune soucoupe n'est nécessaire, aucune trace sur vos meubles.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSER -->
+<section class="closer">
+  <div class="closer__glow"></div>
+  <div class="container closer__inner reveal">
+    <p class="closer__kicker">Prenez soin de ce qui vous fait du bien.</p>
+    <div class="closer__word" aria-hidden="true">AURA</div>
+    <div class="hero__ctas">
+      <a href="#precommande" class="btn btn--primary">Réserver mon Aura · 19 €</a>
+      <a href="#plantes" class="btn btn--ghost glass">Explorer les plantes</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="#top" class="brand"><i class="ph-fill ph-leaf"></i><span>AURA</span></a>
+      <p class="footer__tag">L'entretien intelligent de vos plantes.</p>
+      <form class="news" id="news" novalidate>
+        <label for="newsEmail" class="sr">E-mail pour la lettre d'information</label>
+        <input type="email" id="newsEmail" placeholder="Votre e-mail">
+        <button class="btn btn--glass btn--sm" type="submit">S'inscrire</button>
+      </form>
+      <p class="news__msg" id="newsMsg" role="status"></p>
+    </div>
+    <div>
+      <h4>Produit</h4>
+      <a href="#produit">Fonctionnalités</a><a href="#fonctionnement">Fonctionnement</a><a href="#simulateur">Simulateur</a><a href="#precommande">Pré-commande</a>
+    </div>
+    <div>
+      <h4>Ressources</h4>
+      <a href="#application">Application</a><a href="#plantes">Guide des plantes</a><a href="#faq">FAQ</a>
+    </div>
+    <div>
+      <h4>Suivez-nous</h4>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+        <a href="#" aria-label="TikTok"><i class="ph-fill ph-tiktok-logo"></i></a>
+        <a href="#" aria-label="X"><i class="ph-fill ph-x-logo"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 Aura Intelligence Botanique. Tous droits réservés.</span>
+    <span>Projet conceptuel · visuels générés par IA</span>
+  </div>
+</footer>
+
+<!-- Plant modal -->
+<dialog class="modal" id="plantModal">
+  <div class="modal__inner">
+    <button class="modal__close" id="modalClose" aria-label="Fermer"><i class="ph ph-x"></i></button>
+    <div id="modalBody"></div>
+  </div>
+</dialog>
+
+<script src="./app.js"></script>
+</body>
+</html>
